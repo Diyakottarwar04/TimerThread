@@ -1,0 +1,344 @@
+TCS Question :
+Employee id , Salary , designation , department ,
+
+
+🅿️Problem Statement :
+Design a class  city  and based on the 
+litracy rate, population , number of engineering college . Print the top two city among 10 cities .
+
+5/7/25
+1.Problem Statement :
+
+
+
+
+2.🅿️Problem Statement 2:
+making simple console menu
+for a project feel,create menu:
+  1. Add Book
+  2.Add magazine
+  3.Display All Items
+  4.Search by title
+  5.Exit
+  And write a switch-case to handle user choices
+
+
+
+🅿️problem Statement:
+design a student result management system in java that :
+has an abstract class student with fields name and rollnumber and an abstractmethod calculateGrade()
+
+subclass UGStudent(Undergradute) and PGStudent(postgraduate) override calculateGrade() based on marks
+uses a double wrapper class to store marks
+throw a custom exception invalidMarksException if the marks are negative or abobe 100
+demonstrate  polumorshism to calculate grade for multiple students
+
+OOPs shows you know abstraction inheritance overridding 
+
+
+
+
+
+
+
+
+custom exception :
+ a custom exception also called user defined exception is an exception that we create by ourself by extending exception class (or runtime exception ) to handle application .
+
+
+
+class  {
+   void method a(){
+    method b;
+   }
+}
+ void method B(){
+  int x=5/0;
+ }
+ public static void main(String[] args){
+  example e= new example;
+  e.methodA();
+ }
+
+
+🅿️problem Statement : (final Statement)
+
+Design  a university course registration system with proper object oreiented principle and exception propagation.
+
+An abstract class course with field: courseID ,title, and credits.
+subclass : LabCourses and ThoeryCourse which override calculateFees()
+Credits is stored using the integers  wrappper class
+ if credits are negative or greater than 10, rhrow a custom exception invalidCreditsException 
+
+ demonstrate 
+ ThoeryCourse 1500 per credits
+ LabCourses :   1500 per credits
+
+
+
+🅿️problem Statement :
+ Allens buy product in shop . each alien has an ID and thier cart total 
+  uses HAshMap<
+
+
+7/7/25
+
+🅿️problem Statement :
+Design a ticket booking system for a multiple screens 
+use TreeMap<integer,string> to store seat number(key) and booking stattus(values:"Booked" / "Available)
+
+preload the system with 5seat as Available
+allow the user to book a seat by entering seat number(mark as"Booked")
+print all seat in ascending order of seat numberif seat already booked,throw seatAlreadyBookedException.
+hints :
+✅use TreeMap so seat number stay ordered
+✅handle exception with custom class
+✅demonstrate
+✅TreeMap
+✅exception
+✅correct flow
+solution(logic steps)
+initialize a TreeMap with 5seats - Available
+take seat number from user(say , seat 3)
+if stattus is "Available" chnage to "Booked"
+else throw seatAlreadyBookedException
+finallyprint the updated seat map in ascending order
+
+🅿️Problem Statement :
+Gym Membership Tracker(LinkedHashMap)
+in MonsterGym,monster register for workouts
+you need to :
+✅store monsterName- paidFees in a LinkedHashMap<string,Integer>
+✅insert 4 monster
+✅print thier registeration in insertion order
+✅calculate total collection
+if any monster pays more than 20,000 marks them as "VIP"
+LinkedHashMap (maintain insertion order)
+Wrapper class
+control flow
+
+✅solution(Logic steps):
+✅put 4 momnster into LinkedHashMap
+✅loop for printing
+✅add logic for "VIP"
+✅sum total
+
+
+Problem Statement :
+Wildlife Adoption Tracker(TreeMap) 
+In a wildlife reserve,animal are adopted by donors
+you nedd to build a system to:
+
+✅store animalId - adopterName using a TreeMap<Integer,String>
+✅insert at least 5 sample entries
+✅ Display all animals sorted by thier ID
+✅ If adopter name is "Null" or block throw InvalidAdopterException
+
+🅿️ Problem Statement :
+A startup uses drones to deliver pacakage in a city
+Each dronw has a ID and current battery percentage
+✅store dronesID()- batteryPercentage in a HashMap <integer,Double>
+✅Insert at least 5 sample error
+✅if battery <15%marks as "Needs Recharge "
+✅If battery >100%marks throw InvalidBatteryException 
+✅Finally print the drone with highest battery
+
+
+🅿️Problem Statement : 
+First unique Character in Stream .
+You are given a stream of lower case alphabet Character arriving  one by one implement a class first unique that supports first add(char letter) - it adds a charcter to the string
+Show first unique 
+It will return the first Character that has a linkedHashMap to track thier frequency
+
+8/7/25
+🅿️Problem  Statement :
+Given a stream to lowercase character for each
+Input "aabc"
+
+Use a hash Map or array to count  
+
+
+
+Input : "abac"
+step 1 :
+     Count[] - in how many times each character has appeared
+     2:
+     Queue - if track of character in order they came
+     3:
+     Result -The final output stream
+
+ lets the first character is "a" 
+    1. Add "a" to the Queue = [a]
+    2.count of "a" =1  count[a]=1
+    3.now front of queue is "a"  and it is non repeaating  hence  add a to the result
+
+
+    2.Now the second character is "b"
+     1. Add b to queue [a,b]
+     2 count[b]=1
+     3. now front of queue is "a"
+ and count [a]=1 "a" is   still non reapeating so we will add it to a srresult and result='aa'
+
+ Now the third characcter is  "a "  add again a to the queue
+ Count [a]=2
+ and finally "a" is repeaating
+ Now we will remove front "a" from queue and queue=[b,a]
+ front is "b"  so count[b]=1  and finally we will add b to the result
+ now result=aabc
+
+ Now the next charcter is "c"
+ we will add "c" to the queue 
+ Now count of c =1;
+   count[c]=1
+   since front is "b"so count of b equals to one 
+   now we will add "b" to the result again
+   result will be 
+   finall ans = "aabb"
+
+   somebody of wwhat is happeneing
+ 
+⭕ Story Title : 
+
+Scene 1 : One day Anaya was tirednot typing the samne notes again and again every time she  ran her program she said .
+ >> java whydoes my program forget everything as soon as i close it?
+ java replied wisely :
+ Because you are only printing to the cosnole it disappear like water on send what you need ...is File handling
+
+
+Scene 2: The magic  Dairy(creating a file)
+java give her a magical Dairy
+file diary =new file("mydiary.txt");
+diary.createNewFile();
+Now Anaya could create a new diarywhere she should could save hr though-forever!
+
+Scene 3: the magic pen(writting to the file)
+javav handed her a magic pen called FileWriter
+FileWriter=new FileWriter("mydiary.txt");
+pen.writer('today i learned about files handling");
+pen.close();
+with this pen anaya could
+
+Scene  4:
+
+
+
+
+
+   
+
+
+🅿️Problem Statement :
+You are given a text file name "log.txt" that contain multiple lines. some lines may be duplicates
+
+While a program to :
+Read all lines from log.txtremove duplicates lines
+Write 
+
+
+
+
+
+
+advanced part :
+ask a user for input and output by a file path give it a menu driven structure ( choose what to clean)
+1.duplicates line 
+2.duplicate words
+3.a particular line
+4.last two line
+ 
+
+10/7/25
+🅿️Problem  1 : Producer Consumer with Bounded  Buffer
+concept : Thread communicaation ,wait(),notify(),sychronization
+
+Problem 
+implement a bounded buffer wherer multiple  producer thread produce data and multiple consumer thread consume it . Ensure threaad safe communicaation using wait() and notify()
+
+challenges 
+Avoid deadlock and race conditions
+
+Limit buffer capacity
+
+Rules :
+If the counter is full of donuts (5 already) the chef wait before making more  
+
+
+1.create a Bounded Buffer class  
+this class has a queue<Integer> and a fixed capacity.
+  class BoundedBuffer{
+    private final queue<integer>buffer=new LinkedList<>();
+  }
+
+2.Produce method
+  this method adds an item  to the buffer 
+    public sychronized void produce(int value) 
+     throws interruptedException {
+       while(buffer.size()==capacity) wait(); //wait if buffer full
+       sout ("produced" , + value);
+     }
+
+ 3.  consumer method
+    public sychronized void consume() 
+     throws interruptedException{
+       while(bufferisEmpty()) wait(); //remove item
+       sout("consumed", + value)
+       notifyAll(); //notify producer
+       return value
+     }
+
+
+Producer and consumer Threads 
+
+
+🅿️Problem Statement :
+ Create a thread that act like a timer ,printing the current seconds  count every 1 sec 
+ 
+
+
+ 
+        
+
+
+
+
+
+
+
+
+
+
+🅿️Problem :
+print the number using two threads . 
+write a javav program where one thread prints even number from 1 to 10 
+another  thread print odd number from 1 t0 10
+write the program should print numbers in any order(since thread may run independently)
+but both even and odd number must appeared
+
+Our objective in this problem is  :
+ create two threads
+ use thread class or runnable interface
+ understand how multiple thread run in parallel
+
+The concept which we are going to use here
+ thread creation
+ parallel excution
+ independent task excution
+ Non determinstic output
+ Because the order may vary each run
+
+
+How to create a thread in java :
+  There are main three  ways to create a thread :
+    Extending the thread class
+
+
+
+  
+    
+
+    
+
+
+
+
+Tokenazations : divides into parts.

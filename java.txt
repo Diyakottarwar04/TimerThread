@@ -292,9 +292,9 @@ Producer and consumer Threads
 
 🅿️Problem Statement :
  Create a thread that act like a timer ,printing the current seconds  count every 1 sec 
- 
 
-
+advance part :
+ add start ,puase ,stop and resume 
  
         
 
@@ -332,7 +332,9 @@ How to create a thread in java :
     Extending the thread class
 
 
-
+🅿️ Problem Statement :
+  implement a class Timer that simulate a simple timer using java multithreading 
+  the constructor 
   
     
 
